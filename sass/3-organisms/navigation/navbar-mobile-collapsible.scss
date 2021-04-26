@@ -2,13 +2,15 @@
   &--collapsible {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 110px 30px 30px 30px;
     background-color: $light;
     position: absolute;
     z-index: 5;
-    top: 110px;
+    top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
+    color: white;
     transform: translateY(-200%);
     transition: 200ms ease;
     opacity: 0;

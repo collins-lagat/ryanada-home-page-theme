@@ -28,7 +28,7 @@ defined('ABSPATH') || exit;
 			<div class="logo">
 				<img src="<?php echo get_template_directory_uri() ?>/images/truehostlogo.png" />
 			</div>
-			<a class="language" role="button">
+			<a class="language js-toggle-language-selector" role="button">
 				<i class="fas fa-globe"></i>
 				<span class="locale">US</span>
 			</a>
@@ -390,18 +390,18 @@ defined('ABSPATH') || exit;
 			</li>
 		</ul>
 	</div>
-	<div class="language-selector">
+	<div class="language-selector js-language-selector">
 		<div class="language-selector__actions">
-			<div class="action__search input-group mb-3">
+			<div class="action__search input-group mb-3 js-action__search">
 				<input type="text" class="form-control" placeholder="Enter Language" aria-label="Enter Language" aria-describedby="language-selector__search">
 				<a role="button" class="input-group-text" id="language-selector__search">Search</a>
 			</div>
-			<a role="button" class="action__close">
+			<a role="button" class="action__close js-action__close">
 				<i class="fas fa-times"></i>
 			</a>
 		</div>
 		<div class="language-selector__list-of-languages">
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-us"></span>
 				</div>
@@ -410,7 +410,7 @@ defined('ABSPATH') || exit;
 					<span class="language">English</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-ru"></span>
 				</div>
@@ -419,7 +419,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Russian</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-cn"></span>
 				</div>
@@ -428,7 +428,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Chinese</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-tz"></span>
 				</div>
@@ -437,7 +437,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Swahili</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-tn"></span>
 				</div>
@@ -446,7 +446,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Arabic</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-br"></span>
 				</div>
@@ -455,7 +455,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Portuguese</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-es"></span>
 				</div>
@@ -464,7 +464,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Spanish</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-it"></span>
 				</div>
@@ -473,7 +473,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Italian</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-us"></span>
 				</div>
@@ -482,7 +482,7 @@ defined('ABSPATH') || exit;
 					<span class="language">English</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-ru"></span>
 				</div>
@@ -491,7 +491,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Russian</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-cn"></span>
 				</div>
@@ -500,7 +500,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Chinese</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-tz"></span>
 				</div>
@@ -509,7 +509,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Swahili</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-tn"></span>
 				</div>
@@ -518,7 +518,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Arabic</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-br"></span>
 				</div>
@@ -527,7 +527,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Portuguese</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-es"></span>
 				</div>
@@ -536,7 +536,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Spanish</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-it"></span>
 				</div>
@@ -545,7 +545,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Italian</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-us"></span>
 				</div>
@@ -554,7 +554,7 @@ defined('ABSPATH') || exit;
 					<span class="language">English</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-ru"></span>
 				</div>
@@ -563,7 +563,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Russian</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-cn"></span>
 				</div>
@@ -572,7 +572,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Chinese</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-tz"></span>
 				</div>
@@ -581,7 +581,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Swahili</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-tn"></span>
 				</div>
@@ -590,7 +590,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Arabic</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-br"></span>
 				</div>
@@ -599,7 +599,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Portuguese</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-es"></span>
 				</div>
@@ -608,7 +608,7 @@ defined('ABSPATH') || exit;
 					<span class="language">Spanish</span>
 				</div>
 			</a>
-			<a role="button" class="language-selector__language">
+			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-it"></span>
 				</div>

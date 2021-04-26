@@ -1,4 +1,5 @@
 import { toggleWidget } from "../utils/ui/toggle-element";
+import { deactivateWidget } from "../utils/ui/deactivate-element";
 import { setupGroupNav } from "./navigation/group-menu";
 import { setupMobileGroupNav } from "./navigation/group-menu-mobile";
 
@@ -9,6 +10,13 @@ export const setupNavigation = () => {
   const navGroups = navigation.querySelectorAll(
     ".navbar__desktop .js-nav-group"
   );
+  const languageSelectorButton = navigation.querySelector(
+    ".js-toggle-language-selector"
+  );
+  const languageSelector = document.querySelector(".js-language-selector");
+  const closeLanguageSelectorButton = languageSelector.querySelector(
+    ".js-action__close"
+  );
   const mobileNavbar = document.querySelector(".js-navbar-mobile");
   const mobileNavbarGroupList = mobileNavbar.querySelectorAll(".js-nav__group");
 
@@ -16,6 +24,7 @@ export const setupNavigation = () => {
     event.preventDefault();
     toggleWidget(navbarMenu);
     toggleWidget(mobileNavbar);
+    deactivateWidget(languageSelector);
   });
 
   navGroups.forEach((navGroup) => {
@@ -24,5 +33,19 @@ export const setupNavigation = () => {
 
   mobileNavbarGroupList.forEach((navGroup) => {
     setupMobileGroupNav(navGroup);
+  });
+
+  languageSelectorButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    deactivateWidget(mobileNavbar);
+    deactivateWidget(navbarMenu);
+    toggleWidget(languageSelector);
+  });
+
+  closeLanguageSelectorButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    deactivateWidget(mobileNavbar);
+    deactivateWidget(navbarMenu);
+    toggleWidget(languageSelector);
   });
 };

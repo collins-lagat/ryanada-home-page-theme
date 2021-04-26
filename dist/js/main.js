@@ -99,6 +99,13 @@ __webpack_require__.r(__webpack_exports__);
 var toggleWidget = function toggleWidget(element) {
   element.classList.toggle("is-active");
 };
+// CONCATENATED MODULE: ./js/utils/ui/deactivate-element.js
+/**
+ * @param {HTMLElement} element
+ */
+var deactivateWidget = function deactivateWidget(element) {
+  element.classList.remove("is-active");
+};
 // CONCATENATED MODULE: ./js/ui/navigation/group-menu.js
 
 /**
@@ -1491,22 +1498,39 @@ var group_menu_mobile_setupMobileGroupNav = function setupMobileGroupNav(groupNa
 
 
 
+
 var navigation_setupNavigation = function setupNavigation() {
   var navigation = document.querySelector("#navigation");
   var navbarMenu = navigation.querySelector(".js-navbar-menu");
   var navGroups = navigation.querySelectorAll(".navbar__desktop .js-nav-group");
+  var languageSelectorButton = navigation.querySelector(".js-toggle-language-selector");
+  var languageSelector = document.querySelector(".js-language-selector");
+  var closeLanguageSelectorButton = languageSelector.querySelector(".js-action__close");
   var mobileNavbar = document.querySelector(".js-navbar-mobile");
   var mobileNavbarGroupList = mobileNavbar.querySelectorAll(".js-nav__group");
   navbarMenu.addEventListener("click", function (event) {
     event.preventDefault();
     toggleWidget(navbarMenu);
     toggleWidget(mobileNavbar);
+    deactivateWidget(languageSelector);
   });
   navGroups.forEach(function (navGroup) {
     group_menu_setupGroupNav(navGroup);
   });
   mobileNavbarGroupList.forEach(function (navGroup) {
     group_menu_mobile_setupMobileGroupNav(navGroup);
+  });
+  languageSelectorButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    deactivateWidget(mobileNavbar);
+    deactivateWidget(navbarMenu);
+    toggleWidget(languageSelector);
+  });
+  closeLanguageSelectorButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    deactivateWidget(mobileNavbar);
+    deactivateWidget(navbarMenu);
+    toggleWidget(languageSelector);
   });
 };
 // CONCATENATED MODULE: ./js/main.js
