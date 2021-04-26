@@ -1,0 +1,14 @@
+{
+  "browserSyncOptions": {
+    "proxy": "localhost/wordpress",
+    "notify": false,
+    "files": ["./dist/css/*.min.css", "./dist/js/*.min.js", "./**/*.php"]
+  },
+  "paths": {
+    "sass": "sass",
+    "esnext": "js",
+    "dist": "dist",
+    "js": "dist/js",
+    "css": "dist/css"
+  }
+}

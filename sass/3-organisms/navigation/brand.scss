@@ -1,0 +1,54 @@
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  .logo {
+    position: relative;
+    width: 100px;
+    height: 15px;
+
+    img {
+      width: 100%;
+      position: absolute;
+    }
+  }
+
+  .language {
+    color: $secondary;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 200ms ease;
+    font-size: 18px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    .locale {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .brand {
+    gap: 40px;
+
+    .logo {
+      width: 150px;
+      height: 22px;
+    }
+
+    .language {
+      font-size: 20px;
+      .locale {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+}

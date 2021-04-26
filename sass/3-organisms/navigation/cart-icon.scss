@@ -1,0 +1,34 @@
+.cart {
+  display: flex;
+  align-items: center;
+
+  .cart__icon {
+    width: 27px;
+    height: 24px;
+    color: $primary;
+  }
+
+  .number {
+    background-color: $secondary;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color: $light;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -5px;
+    right: 0;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .cart {
+    font-size: 24px;
+
+    .text {
+      font-size: 18px;
+    }
+  }
+}

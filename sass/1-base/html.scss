@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: $dark;
+  background-color: $light;
+  @extend .font__sans;
+}
+
+a {
+  text-decoration: none;
+  color: $dark;
+}

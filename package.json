@@ -1,0 +1,32 @@
+{
+  "name": "ryanada",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Ryanada Limited",
+  "license": "GPL",
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "autoprefixer": "^10.2.5",
+    "browser-sync": "^2.26.14",
+    "cssnano": "^5.0.1",
+    "del": "^6.0.0",
+    "eslint": "^7.24.0",
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "postcss": "^8.2.10",
+    "webpack-stream": "^6.1.2"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.13.17",
+    "animejs": "^3.2.1",
+    "babel-loader": "^8.2.2",
+    "core-js": "^3.11.0"
+  }
+}

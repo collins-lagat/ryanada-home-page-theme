@@ -1,0 +1,113 @@
+.navbar__desktop {
+  display: none;
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar__desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .nav {
+    &__groups {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      margin: 0;
+    }
+
+    &-item__group {
+      position: relative;
+    }
+  }
+
+  .group {
+    &__name {
+      font-size: 18px;
+    }
+
+    &__dropdown-menu {
+      width: 400px;
+      position: absolute;
+      list-style: none;
+      top: 100%;
+      padding: 20px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: white;
+      transform: translateY(-200%);
+      opacity: 0;
+      transition: 200ms ease;
+      transition-property: opacity, transform;
+      left: -100%;
+
+      &.is-active {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+
+      &::after {
+        display: inline-block;
+        content: "\f0d8";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 40px;
+        position: absolute;
+        top: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+      }
+    }
+  }
+
+  .product {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &__icon {
+      color: $primary;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__name {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    &__description {
+      font-size: 14px;
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .action {
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .icon {
+        color: $primary;
+      }
+
+      .text {
+        font-size: 18px;
+      }
+    }
+  }
+}
