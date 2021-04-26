@@ -400,7 +400,7 @@ defined('ABSPATH') || exit;
 				<i class="fas fa-times"></i>
 			</a>
 		</div>
-		<div class="language-selector__list-of-languages">
+		<div class="language-selector__list-of-languages js-language-selector__list-of-languages">
 			<a role="button" class="language-selector__language js-language-selector__language">
 				<div class="flag">
 					<span class="flag-icon flag-icon-us"></span>

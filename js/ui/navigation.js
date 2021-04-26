@@ -2,6 +2,7 @@ import { toggleWidget } from "../utils/ui/toggle-element";
 import { deactivateWidget } from "../utils/ui/deactivate-element";
 import { setupGroupNav } from "./navigation/group-menu";
 import { setupMobileGroupNav } from "./navigation/group-menu-mobile";
+import { setupLanguageSelector } from "./navigation/language-selector";
 
 export const setupNavigation = () => {
   const navigation = document.querySelector("#navigation");
@@ -48,4 +49,6 @@ export const setupNavigation = () => {
     deactivateWidget(navbarMenu);
     toggleWidget(languageSelector);
   });
+
+  setupLanguageSelector(languageSelector);
 };
