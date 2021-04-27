@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header js-header">
     <div class="deal js-deal">
         <div class="deal__titles">
             <h1 class="deal__hero-title">Hero Title</h1>
