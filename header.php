@@ -405,4 +405,6 @@ defined('ABSPATH') || exit;
 		</div>
 	</div>
 
+	<?php get_template_part('partials/header/header'); ?>
+
 	<div id="content" class="site-content">
