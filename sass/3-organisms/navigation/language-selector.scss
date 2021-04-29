@@ -12,6 +12,7 @@
   transition: 200ms ease;
   transition-property: opacity, transform;
   transform: translateY(-300%);
+  z-index: 20;
 
   @include media-breakpoint-up(lg) {
     padding-top: 87px;
