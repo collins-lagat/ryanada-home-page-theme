@@ -47,6 +47,35 @@
         }
       }
 
+      &__social {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 13px 0px;
+        gap: 16px;
+
+        a {
+          color: $secondary;
+        }
+      }
+
+      &__login {
+        a {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .icon {
+          font-size: 24px;
+          color: $primary;
+        }
+
+        .text {
+          font-size: 18px;
+        }
+      }
+
       &__dropdown {
         display: flex;
         flex-direction: column;

@@ -209,14 +209,14 @@ defined('ABSPATH') || exit;
 				</li>
 			</ul>
 			<div class="actions">
-				<a role="button" class="login action">
+				<a href="whmcs/index.php?rp=/login" role="button" class="login action">
 					<i class="icon fas fa-user"></i>
 					<span class="text">Login</span>
 				</a>
-				<a role="button" class="cart action">
+				<a href="/whmcs/cart.php?a=view" role="button" class="cart action js-navbar-cart">
 					<div class="cart__icon position-relative d-flex">
 						<i class="icon fas fa-shopping-cart"></i>
-						<span class="number position-absolute">0</span>
+						<span class="number position-absolute js-number">0</span>
 					</div>
 					<span class="text">Cart</span>
 				</a>
@@ -224,10 +224,10 @@ defined('ABSPATH') || exit;
 		</div>
 		<div class="navbar__mobile">
 			<div class="actions">
-				<a role="button" class="cart">
+				<a href="/whmcs/cart.php?a=view" role="button" class="cart js-navbar-cart">
 					<div class="cart__icon position-relative d-flex">
 						<i class="icon fas fa-shopping-cart"></i>
-						<span class="number position-absolute">0</span>
+						<span class="number position-absolute js-number">0</span>
 					</div>
 				</a>
 				<a role="button" class="menu js-navbar-menu" aria-label="menu" aria-expanded="false">
@@ -387,6 +387,34 @@ defined('ABSPATH') || exit;
 						</a>
 					</li>
 				</ul>
+			</li>
+			<li class="nav__group">
+				<div class="nav__social">
+					<a href="https://www.facebook.com/truehost.cloud">
+						<i class="fab fa-facebook-square fa-2x"></i>
+					</a>
+					<a href="https://twitter.com/truehostcloud">
+						<i class="fab fa-twitter-square fa-2x"></i>
+					</a>
+					<a href="https://www.instagram.com/truehost.cloud/">
+						<i class="fab fa-instagram-square fa-2x"></i>
+					</a>
+					<a href="https://www.linkedin.com/company/truehost-cloud">
+						<i class="fab fa-linkedin-square fa-2x"></i>
+					</a>
+					<a href="skype:truehostcloud">
+						<i class="fab fa-skype fa-2x"></i>
+					</a>
+					<a href="whatsapp:+1 469 73 00 113">
+						<i class="fab fa-whatsapp-square fa-2x"></i>
+					</a>
+				</div>
+			</li>
+			<li class="nav__login">
+				<a href="/whmcs/index.php?rp=/login" role="button" class="login action">
+					<i class="icon fas fa-user"></i>
+					<span class="text">Login</span>
+				</a>
 			</li>
 		</ul>
 	</div>
