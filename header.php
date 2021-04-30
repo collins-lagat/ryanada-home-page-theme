@@ -209,7 +209,7 @@ defined('ABSPATH') || exit;
 				</li>
 			</ul>
 			<div class="actions">
-				<a href="whmcs/index.php?rp=/login" role="button" class="login action">
+				<a href="/whmcs/index.php?rp=/login" role="button" class="login action">
 					<i class="icon fas fa-user"></i>
 					<span class="text">Login</span>
 				</a>
