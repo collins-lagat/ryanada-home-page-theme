@@ -5,7 +5,6 @@
   "main": "index.js",
   "keywords": [],
   "author": "Ryanada Limited",
-  "license": "GPL",
   "scripts": {
     "build": "gulp build"
   },
